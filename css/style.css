@@ -48,3 +48,17 @@ a {
   background-color: #f1d2e7;
   border: 1px solid #d0a8eb;
 }
+
+/* GENERAL RULES */
+
+font-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+font-body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.24;
+}
