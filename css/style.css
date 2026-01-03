@@ -1,11 +1,11 @@
-/* GLOBAL ROOT RULES */
+/*? GLOBAL ROOT RULES */
 :root {
   --blue-color: #2e45cc;
   --green-color: #04df6c;
   --black-color: #3d3a38;
 }
 
-/* RESET */
+/*! RESET */
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-/*! UTILITIES */
+/*? UTILITIES */
 
 .debug,
 .debug > * {
@@ -36,38 +36,67 @@ a {
   min-height: 30px;
 }
 
-/*! BOOTSTRAP DEBUG */
+/*? GENERAL RULES */
 
-/* UTILITIES */
-
-[class^="container"] {
-  border: 1px dashed black;
-  background-color: lightblue;
-  /* min-height: 80vh; */
-}
-
-[class^="row"] {
-  border: 1px dashed red;
-}
-
-[class^="col"] {
-  /* height: 100px; */
-  background-color: #f1d2e7;
-  border: 1px solid #d0a8eb;
-}
-
-/* GENERAL RULES */
-
-font-header {
+.font-header {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+  color: var(--black-color);
 }
-font-body {
+.font-body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.24;
   text-align: center;
+  color: var(--black-color);
 }
+
+/*? MEDIA QUERY RULES */
+@media (min-width: 768px) {
+  .rubber-duck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #rubber-duck-header {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* HEADER */
+.main-content {
+  margin-top: 3rem;
+}
+
+/* HEADER MAIN CONTENT */
+.rubber-duck {
+  padding: 1.7rem;
+  background-image: url(../imgs/banner-bg.png);
+  text-align: center;
+  background-size: cover;
+}
+
+.rubber-duck .font-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.rubber-duck > .font-body {
+  font-size: 0.8rem;
+}
+.rubber-duck > button {
+  background-color: transparent;
+  color: var(--black-color);
+  border: 1px var(--black-color) solid;
+  font-size: 0.7rem;
+  padding: 0.5rem 1.5rem;
+}
+
+/* DUCK INFOS */
