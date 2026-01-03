@@ -65,6 +65,7 @@ a {
 
 /*? MEDIA QUERY RULES */
 @media (min-width: 768px) {
+  /* HEADER MAIN CONTENT */
   .rubber-duck {
     display: flex;
     flex-direction: column;
@@ -72,6 +73,7 @@ a {
     align-items: center;
   }
 
+  /* DUCK INFOS */
   .duck-infos-img {
     display: flex;
     justify-content: center;
@@ -80,6 +82,21 @@ a {
 
   .duck-infos-img img {
     width: 60%;
+  }
+
+  /* FAQs */
+  .accordion-item .accordion-button {
+    font-size: 1rem;
+  }
+
+  .accordion-item .accordion-body {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* GUARANTY */
+  .middle-item {
+    border-right: 1px lightgrey solid;
   }
 }
 
@@ -145,15 +162,16 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+  height: 30rem;
 }
 
 .infos .font-header {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 .infos .font-body {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .duck-img {
@@ -172,7 +190,7 @@ a {
 }
 
 .collection-body {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .duck-list img {
@@ -203,3 +221,85 @@ a {
   margin: 5px 0;
   color: var(--green-color);
 }
+
+/* FAQs */
+.faqs-section {
+  margin: 1.5rem 0.1rem;
+}
+
+.accordion-button,
+.accordion-body {
+  text-align: left;
+}
+
+.accordion-button {
+  font-size: 0.8rem;
+  padding: 7px 0;
+}
+
+.accordion-body {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.accordion-item {
+  border: none;
+  margin: 1rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--black-color);
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px rgba(128, 128, 128, 0.733) solid;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  content: "\002B";
+  background-image: none;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "\2212";
+  background-image: none;
+  transform: none;
+  text-align: center;
+}
+
+/* GUARANTY */
+.guaranty {
+  margin-bottom: 4rem;
+}
+
+.guaranty-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guaranty-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--blue-color);
+  margin: 0.5rem 0;
+}
+
+.guaranty .font-header {
+  margin: 0.1rem 0;
+}
+
+.guaranty .font-body {
+  font-size: 0.7rem;
+}
+
+.middle-item {
+  border-left: 1px lightgrey solid;
+}
+
+/* NEWSLETTER */
