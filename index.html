@@ -42,7 +42,7 @@
     <!-- HEADER -->
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top pt-1">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-1">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -61,7 +61,7 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <svg class="navbar-icon"><use href="#navbar-icon"></use></svg>
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -96,19 +96,19 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">I punti di forza</a>
+                  <a class="nav-link" href="#point">I punti di forza</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recensioni</a>
+                  <a class="nav-link" href="#reviews">Recensioni</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Paperelle</a>
+                  <a class="nav-link" href="#ducks">Paperelle</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">FAQs</a>
+                  <a class="nav-link" href="#faqs">FAQs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Newsletter</a>
+                  <a class="nav-link" href="#newsletter">Newsletter</a>
                 </li>
               </ul>
             </div>
@@ -119,15 +119,13 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      <header class="rubber-duck-header row row-cols-1 row-cols-md-2 g-0">
+      <header class="rubber-duck-header row row-cols-1 row-cols-lg-2 g-0">
         <!-- DUCK -->
         <div class="duck col col">
           <img src="./imgs/banner-image.png" alt="Rubber Duck Image" />
         </div>
         <div class="rubber-duck col">
-          <h1 class="font-header" id="rubber-duck-header">
-            Rubber Duck Debuggings
-          </h1>
+          <h1 class="font-header">Rubber Duck Debuggings</h1>
           <p class="font-body">
             Spiegare il codice a una paperella di gomma aiuta i programmatori a
             chiarire il pensiero e individuare errori nascosti.
@@ -136,8 +134,8 @@
         </div>
       </header>
       <!-- DUCK INFOS -->
-      <section class="duck-infos row">
-        <div class="left-infos col col-12 col-md-3">
+      <section class="duck-infos row" id="punti-di-forza">
+        <div class="left-infos col col-12 col-lg-3">
           <ul class="infos-list">
             <li class="infos">
               <h2 class="font-header">Lunga Durata della Batteria</h2>
@@ -165,10 +163,10 @@
             </li>
           </ul>
         </div>
-        <div class="duck-infos-img col col-12 col-md-6">
+        <div class="duck-infos-img col col-12 col-lg-6">
           <img class="duck-img" src="./imgs/invisible.png" alt="Rubber Duck" />
         </div>
-        <div class="right-infos col col-12 col-md-3">
+        <div class="right-infos col col-12 col-lg-3">
           <ul class="infos-list">
             <li class="infos">
               <h2 class="font-header">Resistenza agli Spruzzi</h2>
@@ -200,43 +198,69 @@
 
       <!-- REVIEWS -->
       <section class="reviews">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <div class="review"></div>
+        <h3 class="font-header header-1-5">
+          Cosa ne pensano i nostri sviluppatori
+        </h3>
+        <div class="review">
+          <!-- INSERIRE SEZIONE RECENSIONI -->
+        </div>
       </section>
 
       <!-- DUCKS LIST -->
       <section class="collection-list">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-          reiciendis.
+        <h3 class="font-header header-1-5">La collezione di paperelle</h3>
+        <p class="font-body collection-body">
+          Una paperella per ogni stile di programmazione
         </p>
-        <div class="duck-list">
-          <div class="duck-item">
+        <div class="duck-list row g-2">
+          <div class="duck-item col col-6 col-lg-4">
             <img src="./imgs/product-item1.png" alt="Cool Duck Item" />
-            <span>Cool-duck</span>
-            <span>$15</span>
+            <div class="rating">
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+            </div>
+            <span class="duck-name font-body">Cool-duck</span>
+            <span class="duck-price font-body">$15</span>
           </div>
-          <div class="duck-item">
+          <div class="duck-item col col-6 col-lg-4">
             <img src="./imgs/product-item2.png" alt="Cool Duck Item" />
-            <span>Classic-duck</span>
-            <span>$29</span>
+            <div class="rating">
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+            </div>
+            <span class="duck-name font-body">Classic-duck</span>
+            <span class="duck-price font-body">$29</span>
           </div>
-          <div class="duck-item">
+          <div class="duck-item col col-6 col-lg-4">
             <img src="./imgs/product-item3.png" alt="Cool Duck Item" />
-            <span>Bat-duck</span>
-            <span>$69</span>
+            <div class="rating">
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+              <svg class="star"><use href="#star-fill"></use></svg>
+            </div>
+            <span class="duck-name font-body">Bat-duck</span>
+            <span class="duck-price font-body">$69</span>
           </div>
         </div>
       </section>
 
       <!-- FAQs -->
-      <section class="faqs-section">
-        <img
-          src="./imgs/single-image2.png"
-          alt="Immagine ragazza al computer"
-        />
-        <div class="faqs">
+      <section class="faqs-section row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <img
+            src="./imgs/single-image2.png"
+            alt="Immagine ragazza al computer"
+          />
+        </div>
+        <div class="faqs col">
           <h3>FAQs</h3>
           <div class="faqs-items"></div>
         </div>
