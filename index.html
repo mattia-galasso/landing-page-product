@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -130,11 +130,11 @@
             Spiegare il codice a una paperella di gomma aiuta i programmatori a
             chiarire il pensiero e individuare errori nascosti.
           </p>
-          <button>ACQUISTALA SUBITO!</button>
+          <button><a href="#ducks">ACQUISTALA SUBITO!</a></button>
         </div>
       </header>
-      <!-- DUCK INFOS -->
       <div class="container-lg">
+        <!-- DUCK INFOS -->
         <section class="duck-infos row" id="point">
           <div class="left-infos col col-12 col-lg-3">
             <ul class="infos-list">
@@ -210,14 +210,15 @@
             <!-- INSERIRE SEZIONE RECENSIONI -->
           </div>
         </section>
-
-        <!-- DUCKS LIST -->
-        <section class="collection-list" id="ducks">
-          <h3 class="font-header header-1-5">La collezione di paperelle</h3>
+      </div>
+      <!-- DUCKS LIST -->
+      <section class="collection-list" id="ducks">
+        <div class="container-lg">
+          <h3 class="font-header">La collezione di paperelle</h3>
           <p class="font-body collection-body">
             Una paperella per ogni stile di programmazione
           </p>
-          <div class="duck-list row g-2">
+          <div class="duck-list row g-3">
             <div class="duck-item col col-6 col-lg-4">
               <img src="./imgs/product-item1.png" alt="Cool Duck Item" />
               <div class="rating">
@@ -255,8 +256,9 @@
               <span class="duck-price font-body">$69</span>
             </div>
           </div>
-        </section>
-
+        </div>
+      </section>
+      <div class="container-lg">
         <!-- FAQs -->
         <section
           class="faqs-section row row-cols-1 row-cols-lg-2 g-2"
@@ -414,27 +416,57 @@
 
     <!-- FOOTER -->
     <footer>
-      <section class="newsletter" id="newsletter">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-          quisquam?
-        </p>
-        <input type="email" placeholder="tua email qui..." /> icon sent
-        <div class="social">
-          <div class="social-item facebook">social</div>
-          <div class="social-item twitter">social</div>
-          <div class="social-item youtube">social</div>
-          <div class="social-item linkedin">social</div>
-          <div class="social-item instagram">social</div>
-        </div>
-      </section>
-      <section class="sign-footer">
-        <span
-          >Lorem ipsum dolor sit, amet consectetur elit. Accusamus,
-          sapiente!</span
-        >
-      </section>
+      <div class="newsletter">
+        <section class="newsletter-box" id="newsletter">
+          <div class="newsletter-content">
+            <h3 class="font-header">Iscriviti per rimanere aggiornato</h3>
+            <p class="font-body">
+              Iscriviti alla nostra newsletter per rimanere aggiornato su sconti
+              e novità
+            </p>
+            <div class="input-button-box">
+              <div class="newsletter-input">
+                <input type="email" placeholder="Lascia la tua email qui..." />
+                <button>
+                  <svg class="send-icon"><use href="#send"></use></svg>
+                </button>
+              </div>
+            </div>
+            <div class="social">
+              <button class="social-button">
+                <svg class="social-item facebook-icon">
+                  <use href="#facebook"></use>
+                </svg>
+              </button>
+              <button class="social-button">
+                <svg class="social-item twitter-icon">
+                  <use href="#twitter"></use>
+                </svg>
+              </button>
+              <button class="social-button">
+                <svg class="social-item youtube-icon">
+                  <use href="#youtube"></use>
+                </svg>
+              </button>
+              <button class="social-button">
+                <svg class="social-item linkedin-icon">
+                  <use href="#linkedin"></use>
+                </svg>
+              </button>
+              <button class="social-button">
+                <svg class="social-item instagram-icon">
+                  <use href="#instagram"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="sign-footer">
+          <span class="font-body"
+            >&copy; 2024 BooLanding Product. Designed by Boolean</span
+          >
+        </section>
+      </div>
     </footer>
 
     <!-- ICONS SVG -->
